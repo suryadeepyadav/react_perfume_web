@@ -1,0 +1,140 @@
+.navbar {
+  height: 11vh;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 2px 2px 2px 2px #efebeb; */
+}
+
+.navbar-logo {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1rem;
+}
+.navbar-logo img {
+  width: 7rem;
+  height: 3rem;
+  margin-right: 0.5rem;
+  margin-left: .7em;
+  margin-top: .2em;
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: flex-end;
+  margin-right: 13rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #a05f43;
+  font-size: .991rem;
+  margin-right: 1.5rem;
+  padding: 6px 6px;
+  /* border-radius: 5px; */
+}
+
+.nav-item a:hover {
+  /* background: rgb(0, 212, 212); */
+  color:#de8b67;
+}
+.hamburger{
+  display: none;
+}
+@media only screen and (max-width: 1260px) {
+  .navbar {
+    height: 11vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 2px 2px 2px 2px #efebeb; */
+  }
+  
+  .navbar-logo {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1rem;
+  }
+  .navbar-logo img {
+    width: 7rem;
+    height: 3rem;
+    margin-right: 0.5rem;
+    margin-left: .7em;
+    margin-top: .2em;
+  }
+  
+  .nav-items {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    width: 60vw;
+    justify-content: flex-end;
+    margin-right: 4rem;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .nav-items {
+    display: none;
+    
+  
+  }
+  .hamburger{
+    display:block;
+    position: absolute;
+    right: 1em;
+  }
+  .navbar-logo {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1rem;
+  }
+  .navbar-logo img {
+    width: 5rem;
+    height: 1.51rem;
+    /* margin-right: 0.5rem; */
+    position: absolute;
+    left: .51em;
+    margin-left: 0;
+    margin-top: .2em;
+  }
+}
+
+
+.mobile-menu{
+  display:none
+}
+.navbar-mobile{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em 0;
+}
+.nav-items-phone{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em 0;
+  margin-left: 1em;
+}

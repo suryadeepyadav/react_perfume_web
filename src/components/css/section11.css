@@ -1,0 +1,115 @@
+.section11{
+    /* border: 1px solid green; */
+    margin-left: 11em;
+    margin-right: 11em;
+    /* margin-top: 5.51em; */
+    padding-top: 5.5em;
+    margin-bottom: 1em;
+    width: calc(100% - 22em);
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    /* margin-bottom: .5em; */
+}
+.uppers11{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.uppers11 button{
+    border: 1px solid #ffffff;
+    background: #a05f43;
+    font-size: 1.1rem;
+    color: white;   
+    transition: 0.3s all ease-out;
+    cursor: pointer;  
+    width: 8em; 
+    height: 3.2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    /* border-radius: 5px; */
+    /* font-weight: bold; */
+}
+.uppers11 button:hover{
+    transform: translateY(-6px);
+}
+
+.lowers11{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    height: 60vh;
+    gap: 1em 1.7em;
+    
+}
+.lowers11content{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 38%;
+    /* border: 1px solid blue; */
+}
+.s11img{
+    width:100%;
+    /* border: 1px solid green; */
+}
+.s11img img{
+    width: 100%;
+    height: 100%;
+}
+.s11img p{
+    position: relative;
+    left: 0em;
+    bottom: 2.9em;
+    color:#a05f43;
+    background: #ffffff;
+    width: 5.6em;
+    height: 3em;
+    padding-top: .8em;
+    padding-left: .7em;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .section11{
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        width: calc(100% - 4em);
+    
+      
+    
+    }
+  }
+
+  @media only screen and (max-width: 1050px) {
+    .lowers11{
+        flex-direction: column;
+        /* height: 100%; */
+        gap: 2.5em 1.7em;
+        height: 40vh;
+    }
+    .lowers11content{
+        width: 100%;
+        height: 100%;
+    }
+    .s11img{
+        width: 100%;
+        height: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .lowers11{
+        gap: 5.23em 1.7em;
+    }
+}
+  @media only screen and (max-width: 750px) {
+    .uppers11{
+        flex-direction: column;
+    }
+  }

@@ -1,0 +1,134 @@
+.section5{
+    /* border: 1px solid blue; */
+    margin-left: 11em;
+    margin-right: 11em;
+    margin-top: 12.51em;
+    margin-bottom: 1em;
+    width: calc(100% - 22em);
+    display: flex;
+    flex-direction: row;
+    gap: 1em 1em;
+    /* background-color: black; */
+}
+.s5content{
+    /* border: 1px solid red; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em 0;
+}
+.s5video{
+    /* border: 1px solid gray; */
+    width: 50%;
+    display: flex;
+}
+@media only screen and (max-width: 1200px) {
+    .section5{
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        width: calc(100% - 4em);
+    
+      
+    
+    }
+    .s5content{
+        width: 100%;
+        /* padding-left: .5em; */
+        margin-top: 5em;
+
+    
+    }
+    .s5video{
+        width: 100%;
+    }
+  }
+  @media only screen and (max-width: 750px) {
+    .section5{
+        flex-direction: column;
+    }
+    .video-play-button {
+        bottom: 20%;
+    }
+    .video-play-button:before {
+        top: 70%;
+    }
+    .video-play-button:after {
+        top: 70%;
+    }
+  }
+
+
+
+
+  .video-play-button {
+    position: relative;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-sizing: content-box;
+    display: block;
+    width: 32px;
+    height: 44px;
+    /* background: #928d8e; */
+    border-radius: 50%;
+    padding: 18px 20px 18px 28px;
+  }
+  
+  .video-play-button:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 55px;
+    height: 55px;
+    background: #534f51;
+    /* border: 1px solid #ffffff; */
+    border-radius: 50%;
+    animation: pulse-border 1100ms ease-out infinite;
+  }
+  
+  .video-play-button:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    transition: all 200ms;
+  }
+  
+  .video-play-button span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border-left: 19px solid #ffffff;
+      border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    top: 10px;
+    left: 5px;
+  }
+  
+  @keyframes pulse-border {
+    0% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+      opacity: 0;
+    }
+  }

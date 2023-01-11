@@ -1,0 +1,196 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  /* min-width: 100%; */
+}
+.mainhome{
+  background-image: url("./components/images/mainbg.jpg");
+  /* max-height: 110vh; */
+  height: 110vh;
+  width: 100%;
+  max-width: 100%;
+  /* max-height: 100%; */
+  /* background-size: cover; */
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  z-index: 1;
+
+}
+
+.mainhome-left{
+  width: 40%;
+  height: 100%;
+  /* float: left; */
+  z-index: 1;
+  background-color: #fcf5f2;
+}
+
+.mainabout{
+  background-image: url("./components/images/abaout.png");
+  /* border: 1px solid red; */
+  /* max-height: 110vh; */
+  height: 85vh;
+  width: 100%;
+  max-width: 100%;
+  /* max-height: 100%; */
+  /* background-size: cover; */
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  z-index: 1;
+
+}
+.mainsection5{
+  background-image: url("./components/images/bg5.jpg");
+  border: 1px solid #0d0d0d;
+  /* max-height: 110vh; */
+  height: 80vh;
+  width: 100%;
+  min-width: 100%;
+  /* max-height: 100%; */
+  /* background-size: cover; */
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  z-index: 1;
+  background-attachment: fixed;
+  /* margin-top: 5.5em; */
+}
+
+.section10main{
+  background-image: url("./components/images/s10bg.jpg");
+  /* border: 1px solid #0d0d0d; */
+  /* max-height: 110vh; */
+  height: 80vh;
+  width: 100%;
+  min-width: 100%;
+  /* max-height: 100%; */
+  /* background-size: cover; */
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  z-index: 0;
+  margin-top: 6.5em;
+  position: sticky;
+  background-attachment: fixed;
+  backdrop-filter: blur(16px);
+  /* filter: brightness(50%); */
+  /* opacity: 0.9; */
+  /* filter: blur(5px); */
+  background-color:#00000036;
+  
+
+}
+
+.mainfooter{
+  background-color: #a05f43;
+  width: 100%;
+  min-width: 100%;
+  height: 71.2vh;
+}
+
+@media only screen and (max-width: 1025px) {
+  .mainfooter{
+    height:auto;
+  }
+}
+
+.section12main{
+  background-image: url("./components/images/section12.png");
+  border: 1px solid #d1d0d0;
+  /* max-height: 110vh; */
+  height: 35vh;
+  width: 100%;
+  min-width: 100%;
+  /* max-height: 100%; */
+  /* background-size: cover; */
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  z-index: 1;
+  margin-top: 3.5em;
+  /* position: sticky; */
+  /* opacity: 0.9; */
+  /* filter: blur(5px); */
+  background-color: rgba(255, 206, 236, 0.558);
+
+}
+@media only screen and (max-width: 1050px) {
+  .section12main{
+      margin-top: 25.51em;
+      height: auto;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .section12main{
+     height: 45vh;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .section12main{
+      margin-top: 27.51em;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .section12main{
+      margin-top: 32.51em;
+      height: auto;
+  }
+  /* .mainmenunav{
+    margin-top: -2.5em;
+  } */
+}
+@media only screen and (max-width: 450px) {
+  .section12main{
+      margin-top: 42.51em;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .section12main{
+      margin-top: 46.51em;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .mainsection5{
+    /* margin-top: 49.5em; */
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top:8em;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .mainsection5{
+    margin-top: 28.5em;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+ .mainhome{
+  background-image: url("./components/images/mainbg.jpg");
+  /* max-height: 110vh; */
+  height: 110vh;
+  width: 100%;
+  max-width: 100%;
+  /* max-height: 100%; */
+  background-size: cover;
+  /* background-size: contain; */
+  background-position: right;
+  background-repeat: no-repeat;
+  z-index: 1;
+
+}
+}
+@media only screen and (max-width: 750px) {
+  .mainhome-left{
+    width: 80%;
+    height: 100%;
+    /* float: left; */
+    z-index: 1;
+    background-color: #fcf5f2;
+  }
+}
